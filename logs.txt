@@ -1,44 +1,3 @@
-2013-05-05T21:40:23.317187+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2013-05-05T21:40:23.750701+00:00 app[web.1]: [2013-05-05 21:40:23] ERROR SignalException: SIGTERM
-2013-05-05T21:40:23.750701+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
-2013-05-05T21:40:32.939056+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
-2013-05-05T21:40:32.938935+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
-2013-05-05T21:40:34.395403+00:00 heroku[web.1]: Process exited with status 137
-2013-05-05T21:40:34.404224+00:00 heroku[web.1]: State changed from up to down
-2013-05-06T16:55:46.773850+00:00 heroku[web.1]: Unidling
-2013-05-06T16:55:46.773850+00:00 heroku[web.1]: State changed from down to starting
-2013-05-06T16:55:48.109986+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 57084`
-2013-05-06T16:55:50.780754+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2013-05-06T16:55:50.780434+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2013-05-06T16:55:50.780434+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2013-05-06T16:55:54.247620+00:00 app[web.1]: [2013-05-06 16:55:54] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
-2013-05-06T16:55:54.248030+00:00 app[web.1]: [2013-05-06 16:55:54] INFO  WEBrick::HTTPServer#start: pid=2 port=57084
-2013-05-06T16:55:54.247620+00:00 app[web.1]: [2013-05-06 16:55:54] INFO  WEBrick 1.3.1
-2013-05-06T16:55:55.848421+00:00 app[web.1]: => Booting WEBrick
-2013-05-06T16:55:55.848421+00:00 app[web.1]: => Rails 3.2.13 application starting in production on http://0.0.0.0:57084
-2013-05-06T16:55:55.848421+00:00 app[web.1]: => Call with -d to detach
-2013-05-06T16:55:55.848421+00:00 app[web.1]: => Ctrl-C to shutdown server
-2013-05-06T16:55:55.848421+00:00 app[web.1]: Started GET "/" for 96.50.46.238 at 2013-05-06 16:55:55 +0000
-2013-05-06T16:55:58.385775+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
-2013-05-06T16:55:58.567490+00:00 app[web.1]: Processing by PagesController#home as HTML
-2013-05-06T16:55:58.614941+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (24.1ms)
-2013-05-06T16:55:58.618730+00:00 app[web.1]: WARN: tilt autoloading 'sass' in a non thread-safe way; explicit require 'sass' suggested.
-2013-05-06T16:55:59.029067+00:00 heroku[router]: at=info method=GET path=/ host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=1ms service=3200ms status=500 bytes=643
-2013-05-06T16:55:59.033726+00:00 app[web.1]:     6: 	  <%= javascript_include_tag "application" %>
-2013-05-06T16:55:59.033984+00:00 app[web.1]:     8: 	</head>
-2013-05-06T16:55:59.031723+00:00 app[web.1]: Completed 500 Internal Server Error in 464ms
-2013-05-06T16:55:59.033726+00:00 app[web.1]:     2: <html>
-2013-05-06T16:55:59.033726+00:00 app[web.1]: Load path: /app
-2013-05-06T16:55:59.033726+00:00 app[web.1]:   (in /app/app/assets/stylesheets/styles.css.scss)):
-2013-05-06T16:55:59.033984+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2110499719270125488_30681820'
-2013-05-06T16:55:59.033726+00:00 app[web.1]:     4: 	  <title>D-Rails</title>
-2013-05-06T16:55:59.033726+00:00 app[web.1]: 
-2013-05-06T16:55:59.033726+00:00 app[web.1]:     5: 	  <%= stylesheet_link_tag    "application", :media => "all" %>
-2013-05-06T16:55:59.033984+00:00 app[web.1]: Compiled pages.css  (389ms)  (pid 2)
-2013-05-06T16:55:59.033726+00:00 app[web.1]: ActionView::Template::Error (File to import not found or unreadable: bootstrap.
-2013-05-06T16:55:59.033984+00:00 app[web.1]:   app/assets/stylesheets/styles.css.scss:8
-2013-05-06T16:55:59.033984+00:00 app[web.1]: 
-2013-05-06T16:55:59.033726+00:00 app[web.1]:     3: 	<head>
 2013-05-06T16:55:59.033726+00:00 app[web.1]:     7: 	  <%= csrf_meta_tags %>
 2013-05-06T16:55:59.033984+00:00 app[web.1]: 
 2013-05-06T16:55:59.301926+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=3ms service=9ms status=200 bytes=0
@@ -58,9 +17,9 @@
 2013-05-06T20:05:25.695465+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
 2013-05-06T20:05:25.695210+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
 2013-05-06T20:05:28.600509+00:00 app[web.1]: [2013-05-06 20:05:28] INFO  WEBrick 1.3.1
-2013-05-06T20:05:28.600509+00:00 app[web.1]: [2013-05-06 20:05:28] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
-2013-05-06T20:05:
-28.600777+00:00 app[web.1]: [2013-05-06 20:05:28] INFO  WEBrick::HTTPServer#start: pid=2 port=4528
+2013-05-06T20:05:28.600509+00:00 app[web.1]: [2013-05-06 20:05:28] INFO  ruby 1.9.2 (2011-07-09) [x86_64-li
+nux]
+2013-05-06T20:05:28.600777+00:00 app[web.1]: [2013-05-06 20:05:28] INFO  WEBrick::HTTPServer#start: pid=2 port=4528
 2013-05-06T20:05:28.792934+00:00 heroku[web.1]: State changed from starting to up
 2013-05-06T20:05:29.593350+00:00 app[web.1]: => Call with -d to detach
 2013-05-06T20:05:29.593350+00:00 app[web.1]: => Ctrl-C to shutdown server
@@ -90,7 +49,8 @@
 2013-05-06T20:05:31.672322+00:00 app[web.1]: 
 2013-05-06T20:05:31.677254+00:00 heroku[router]: at=info method=GET path=/ host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=0ms service=2106ms status=500 bytes=643
 2013-05-06T20:05:32.582000+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=5ms service=11ms status=304 bytes=0
-2013-05-06T21:09:48.369606+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2013-05-06T21:09:48.369606+00:00 heroku[web.1]: Sto
+pping all processes with SIGTERM
 2013-05-06T21:09:49.057261+00:00 app[web.1]: [2013-05-06 21:09:49] ERROR SignalException: SIGTERM
 2013-05-06T21:09:49.057261+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
 2013-05-06T21:09:57.755944+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
@@ -100,3 +60,44 @@
 2013-05-06T22:12:01.999752+00:00 heroku[web.1]: Unidling
 2013-05-06T22:12:01.999752+00:00 heroku[web.1]: State changed from down to starting
 2013-05-06T22:12:13.302153+00:00 heroku[router]: at=info method=GET path=/ host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=3ms service=2231ms status=500 bytes=643
+2013-05-06T22:28:55.789639+00:00 heroku[slugc]: Slug compilation started
+2013-05-06T22:29:39.385861+00:00 heroku[api]: Release v8 created by it.heroku@tech-nofile.com
+2013-05-06T22:29:39.429472+00:00 heroku[api]: Deploy b4d4807 by it.heroku@tech-nofile.com
+2013-05-06T22:29:39.838332+00:00 heroku[web.1]: State changed from up to starting
+2013-05-06T22:29:39.871658+00:00 heroku[slugc]: Slug compilation finished
+2013-05-06T22:29:41.355649+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 10771`
+2013-05-06T22:29:45.227591+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-06T22:29:45.220966+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-06T22:29:45.227018+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-05-06T22:29:48.096646+00:00 app[web.1]: [2013-05-06 22:29:48] INFO  WEBrick 1.3.1
+2013-05-06T22:29:48.096849+00:00 app[web.1]: [2013-05-06 22:29:48] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2013-05-06T22:29:48.097320+00:00 app[web.1]: [2013-05-06 22:29:48] INFO  WEBrick::HTTPServer#start: pid=2 port=10771
+2013-05-06T22:29:48.751983+00:00 heroku[web.1]: State changed from starting to up
+2013-05-06T22:29:54.789335+00:00 app[web.1]: => Call with -d to detach
+2013-05-06T22:29:54.789335+00:00 app[web.1]: => Booting WEBrick
+2013-05-06T22:29:54.789335+00:00 app[web.1]: => Rails 3.2.13 application starting in production on http://0.0.0.0:10771
+2013-05-06T22:29:54.789335+00:00 app[web.1]: => Ctrl-C to shutdown server
+2013-05-06T22:29:54.789335+00:00 app[web.1]: Started GET "/" for 96.50.46.238 at 2013-05-06 22:29:54 +0000
+2013-05-06T22:29:55.338072+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2013-05-06T22:29:55.523230+00:00 app[web.1]: Processing by PagesController#home as HTML
+2013-05-06T22:29:55.576415+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (8.1ms)
+2013-05-06T22:29:55.580928+00:00 app[web.1]: WARN: tilt autoloading 'sass' in a non thread-safe way; explicit require 'sass' suggested.
+2013-05-06T22:29:56.063827+00:00 app[web.1]:     6: 	  <%= javascript_include_tag "application" %>
+2013-05-06T22:29:56.061763+00:00 app[web.1]: Completed 500 Internal Server Error in 538ms
+2013-05-06T22:29:56.063827+00:00 app[web.1]: ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+2013-05-06T22:29:56.063827+00:00 app[web.1]: Load path: /app
+2013-05-06T22:29:56.063827+00:00 app[web.1]:   (in /app/app/assets/stylesheets/styles.css.scss)):
+2013-05-06T22:29:56.063827+00:00 app[web.1]:     3: 	<head>
+2013-05-06T22:29:56.064077+00:00 app[web.1]:   app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__832416429621617754_36578260'
+2013-05-06T22:29:56.063827+00:00 app[web.1]:     4: 	  <title>D-Rails</title>
+2013-05-06T22:29:56.063827+00:00 app[web.1]: 
+2013-05-06T22:29:56.063827+00:00 app[web.1]:     2: <html>
+2013-05-06T22:29:56.064077+00:00 app[web.1]: Compiled pages.css  (432ms)  (pid 2)
+2013-05-06T22:29:56.064077+00:00 app[web.1]: 
+2013-05-06T22:29:56.063827+00:00 app[web.1]:     5: 	  <%= stylesheet_link_tag    "application", :media => "all" %>
+2013-05-06T22:29:56.064077+00:00 app[web.1]:     8: 	</head>
+2013-05-06T22:29:56.063827+00:00 app[web.1]:     7: 	  <%= csrf_meta_tags %>
+2013-05-06T22:29:56.064077+00:00 app[web.1]: 
+2013-05-06T22:29:56.064077+00:00 app[web.1]:   app/assets/stylesheets/styles.css.scss:1
+2013-05-06T22:29:56.069661+00:00 heroku[router]: at=info method=GET path=/ host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=6ms service=1287ms status=500 bytes=643
+2013-05-06T22:29:56.372716+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=1ms service=11ms status=200 bytes=0
