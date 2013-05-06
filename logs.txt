@@ -1,36 +1,3 @@
-2013-05-06T16:55:59.033726+00:00 app[web.1]:     7: 	  <%= csrf_meta_tags %>
-2013-05-06T16:55:59.033984+00:00 app[web.1]: 
-2013-05-06T16:55:59.301926+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=3ms service=9ms status=200 bytes=0
-2013-05-06T16:55:54.745916+00:00 heroku[web.1]: State changed from starting to up
-2013-05-06T18:00:37.352611+00:00 heroku[web.1]: Idling
-2013-05-06T18:00:56.100371+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2013-05-06T18:00:56.156205+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
-2013-05-06T18:00:56.156205+00:00 app[web.1]: [2013-05-06 18:00:52] ERROR SignalException: SIGTERM
-2013-05-06T18:01:01.592241+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
-2013-05-06T18:01:01.592241+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
-2013-05-06T18:01:05.266436+00:00 heroku[web.1]: Process exited with status 137
-2013-05-06T18:01:05.280167+00:00 heroku[web.1]: State changed from up to down
-2013-05-06T20:04:47.455933+00:00 heroku[web.1]: Unidling
-2013-05-06T20:04:47.455933+00:00 heroku[web.1]: State changed from down to starting
-2013-05-06T20:05:21.517046+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 4528`
-2013-05-06T20:05:25.695080+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2013-05-06T20:05:25.695465+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2013-05-06T20:05:25.695210+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2013-05-06T20:05:28.600509+00:00 app[web.1]: [2013-05-06 20:05:28] INFO  WEBrick 1.3.1
-2013-05-06T20:05:28.600509+00:00 app[web.1]: [2013-05-06 20:05:28] INFO  ruby 1.9.2 (2011-07-09) [x86_64-li
-nux]
-2013-05-06T20:05:28.600777+00:00 app[web.1]: [2013-05-06 20:05:28] INFO  WEBrick::HTTPServer#start: pid=2 port=4528
-2013-05-06T20:05:28.792934+00:00 heroku[web.1]: State changed from starting to up
-2013-05-06T20:05:29.593350+00:00 app[web.1]: => Call with -d to detach
-2013-05-06T20:05:29.593350+00:00 app[web.1]: => Ctrl-C to shutdown server
-2013-05-06T20:05:29.593350+00:00 app[web.1]: => Booting WEBrick
-2013-05-06T20:05:29.593350+00:00 app[web.1]: => Rails 3.2.13 application starting in production on http://0.0.0.0:4528
-2013-05-06T20:05:29.593350+00:00 app[web.1]: Started GET "/" for 96.50.46.238 at 2013-05-06 20:05:29 +0000
-2013-05-06T20:05:30.517076+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
-2013-05-06T20:05:30.849375+00:00 app[web.1]: Processing by PagesController#home as HTML
-2013-05-06T20:05:30.905739+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (30.4ms)
-2013-05-06T20:05:30.910088+00:00 app[web.1]: WARN: tilt autoloading 'sass' in a non thread-safe way; explicit require 'sass' suggested.
-2013-05-06T20:05:31.669963+00:00 app[web.1]: Completed 500 Internal Server Error in 820ms
 2013-05-06T20:05:31.672062+00:00 app[web.1]:     4: 	  <title>D-Rails</title>
 2013-05-06T20:05:31.672062+00:00 app[web.1]: ActionView::Template::Error (File to import not found or unreadable: bootstrap.
 2013-05-06T20:05:31.672062+00:00 app[web.1]: Load path: /app
@@ -49,8 +16,7 @@ nux]
 2013-05-06T20:05:31.672322+00:00 app[web.1]: 
 2013-05-06T20:05:31.677254+00:00 heroku[router]: at=info method=GET path=/ host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=0ms service=2106ms status=500 bytes=643
 2013-05-06T20:05:32.582000+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=5ms service=11ms status=304 bytes=0
-2013-05-06T21:09:48.369606+00:00 heroku[web.1]: Sto
-pping all processes with SIGTERM
+2013-05-06T21:09:48.369606+00:00 heroku[web.1]: Stopping all processes with SIGTERM
 2013-05-06T21:09:49.057261+00:00 app[web.1]: [2013-05-06 21:09:49] ERROR SignalException: SIGTERM
 2013-05-06T21:09:49.057261+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
 2013-05-06T21:09:57.755944+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
@@ -101,3 +67,35 @@ pping all processes with SIGTERM
 2013-05-06T22:29:56.064077+00:00 app[web.1]:   app/assets/stylesheets/styles.css.scss:1
 2013-05-06T22:29:56.069661+00:00 heroku[router]: at=info method=GET path=/ host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=6ms service=1287ms status=500 bytes=643
 2013-05-06T22:29:56.372716+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno=web.1 connect=1ms service=11ms status=200 bytes=0
+2013-05-06T22:35:15.202826+00:00 heroku[slugc]: Slug compilation started
+2013-05-06T22:35:51.369812+00:00 heroku[slugc]: Slug compilation finished
+2013-05-06T22:35:51.612534+00:00 heroku[web.1]: State changed from up to starting
+2013-05-06T22:35:52.875670+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 54758`
+2013-05-06T22:35:55.470776+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/railties-3.2.13/lib/rails/commands.rb:53:in `require'
+2013-05-06T22:35:55.470776+00:00 app[web.1]: /app/config/application.rb:5:in `<top (required)>': undefined local variable or method `config' for main:Object (NameError)
+2013-05-06T22:35:55.470776+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/railties-3.2.13/lib/rails/commands.rb:50:in `<top (required)>'
+2013-05-06T22:35:55.470776+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/railties-3.2.13/lib/rails/commands.rb:50:in `tap'
+2013-05-06T22:35:55.470776+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/railties-3.2.13/lib/rails/commands.rb:53:in `block in <top (required)>'
+2013-05-06T22:35:55.470776+00:00 app[web.1]: 	from script/rails:6:in `require'
+2013-05-06T22:35:55.470776+00:00 app[web.1]: 	from script/rails:6:in `<main>'
+2013-05-06T22:35:56.794786+00:00 heroku[web.1]: Process exited with status 1
+2013-05-06T22:35:56.812504+00:00 heroku[web.1]: State changed from starting to crashed
+2013-05-06T22:35:56.814065+00:00 heroku[web.1]: State changed from crashed to starting
+2013-05-06T22:35:58.607854+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 40147`
+2013-05-06T22:36:04.549243+00:00 app[web.1]: /app/config/application.rb:5:in `<top (required)>': undefined local variable or method `config' for main:Object (NameError)
+2013-05-06T22:36:04.549398+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/railties-3.2.13/lib/rails/commands.rb:53:in `require'
+2013-05-06T22:36:04.549483+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/railties-3.2.13/lib/rails/commands.rb:53:in `block in <top (required)>'
+2013-05-06T22:36:04.549615+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/railties-3.2.13/lib/rails/commands.rb:50:in `tap'
+2013-05-06T22:36:04.549777+00:00 app[web.1]: 	from script/rails:6:in `require'
+2013-05-06T22:36:04.549698+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/1.9.1/gems/railties-3.2.13/lib/rails/commands.rb:50:in `<top (required)>'
+2013-05-06T22:36:04.549855+00:00 app[web.1]: 	from script/rails:6:in `<main>'
+2013-05-06T22:36:06.108919+00:00 heroku[web.1]: Process exited with status 1
+2013-05-06T22:36:06.167033+00:00 heroku[web.1]: State changed from starting to crashed
+2013-05-06T22:36:06.947381+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno= connect= service= status=503 bytes=
+2013-05-06T22:36:07.501371+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=dry-coast-4137.herokuapp.com fwd="96.50.46.238" dyno= connect= service= status=503 bytes=
+2013-05-06T22:36:11.595248+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2013-05-06T22:36:12.436755+00:00 app[web.1]: [2013-05-06 22:36:12] ERROR SignalException: SIGTERM
+2013-05-06T22:36:12.436755+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2013-05-06T22:36:22.641888+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2013-05-06T22:36:22.642083+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2013-05-06T22:36:26.566890+00:00 heroku[web.1]: Process exited with status 137
